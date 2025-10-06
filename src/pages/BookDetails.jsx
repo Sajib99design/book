@@ -1,6 +1,11 @@
 import React from 'react'
 import { useLoaderData, useParams } from 'react-router'
 import { addToStoreDB } from '../utility/addToDB';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+const MySwal = withReactContent(Swal)
+
+
 
 function BookDetails() {
     const { Id } = useParams();
@@ -14,6 +19,7 @@ function BookDetails() {
 
     const handleMarkRead = id => {
         addToStoreDB(id);
+        MySwal.fire("SweetAlert2 is working!");
     }
 
 
