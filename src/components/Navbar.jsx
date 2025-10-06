@@ -32,6 +32,9 @@ function Navbar() {
                         <li>
                             <Link to='/about'> About </Link>
                         </li>
+                        <li>
+                            <Link to='/readList'> ReadList </Link>
+                        </li>
 
                     </ul>
                 </div>

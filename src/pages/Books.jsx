@@ -12,7 +12,7 @@ function Books({bookdata}) {
 
   // const bookPromise = fetch('./booksData.json')
   // .then(res => res.json())
-  console.log(bookdata);
+  // console.log(bookdata);
   return (
     <div>
       <h3>hello Books</h3>
