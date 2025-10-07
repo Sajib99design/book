@@ -16,12 +16,12 @@ function ReadList() {
     const handleSort = (type) => {
         setSort(type);
         if (type === 'Pages') {
-            const sortedByPage = [...readList].sort((a,b) => a.totalPages - b.totalPages);
+            const sortedByPage = [...readList].sort((a, b) => a.totalPages - b.totalPages);
             setReadList(sortedByPage);
         }
-        if(type === 'Ratting') {
-            const sortedByrating = [...readList].sort((a,b) => a.rating - b.rating);
-            setReadList( sortedByrating);
+        if (type === 'Ratting') {
+            const sortedByrating = [...readList].sort((a, b) => a.rating - b.rating);
+            setReadList(sortedByrating);
         }
     };
 
@@ -33,7 +33,7 @@ function ReadList() {
         setReadList(myRead);
 
     }, []);
-    console.log(readList);
+    // console.log(readList);
 
     return (
         <div>
